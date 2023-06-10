@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>RandomNumberGeberator</title>
+	</head>
+	<body>
+		<div class="input">
+			<label for="length">Enter Length</label>
+			<input
+				type="number"
+				placeholder="Eg: 8"
+				name="length"
+				id="length" />
+		</div>
+
+		<div class="selection">
+			<label for="num">Number</label>
+			<input
+				type="checkbox"
+				id="num"
+				name="options"
+				checked />
+
+			<label for="upper">Upper</label>
+			<input
+				type="checkbox"
+				id="upper"
+				name="options"
+				value="upper" />
+
+			<label for="lower">Lower</label>
+			<input
+				type="checkbox"
+				id="lower"
+				name="options"
+				value="lower" />
+
+			<label for="special">Special</label>
+			<input
+				type="checkbox"
+				id="special"
+				name="options"
+				checked />
+		</div>
+
+		<button
+			type="submit"
+			onclick="generate()">
+			Generate
+		</button>
+
+		<div id="password"></div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
